@@ -86,14 +86,19 @@ customConfigTarget="puphpet/config-custom.yaml"
 if [ -d "$puphpetPath" ]; then
     
     if ! [ -f "puphpet" ]; then
-        ln -s ${puphpetPath}/puphpet puphpet
+        cp -r ${puphpetPath}/puphpet .
         printf "  - ${copie_str} ${puphpetPath}/puphpet  -> puphpet${NC}\n\n"
     else
 	    printf "  - ${error_str} ${puphpetPath} not found!\n";
     fi
     
     if ! [ -f "$vagrantFile" ]; then
-        ln -s ${puphpetPath}/${vagrantFile} ${vagrantFile}
+        cp ${puphpetPath}/${vagrantFile} .
+        printf "  - ${copie_str} ${puphpetPath}/${vagrantFile}  -> ${vagrantFile}${NC}\n\n"
+    fi
+
+    if ! [ -f "$vagrantFile" ]; then
+        cp ${puphpetPath}/${vagrantFile} .
         printf "  - ${copie_str} ${puphpetPath}/${vagrantFile}  -> ${vagrantFile}${NC}\n\n"
     fi
 

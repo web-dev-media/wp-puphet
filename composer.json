@@ -26,19 +26,6 @@
 		{
 			"type": "vcs",
 			"url": "git@github.com:web-dev-media/puphpet.git"
-		},
-		{
-			"type": "package",
-			"package": {
-				"name": "gravity-tooltips",
-				"type": "wordpress-plugin",
-				"version": "dev-master",
-				"source": {
-					"url": "https://github.com/norcross/gravity-tooltips.git",
-					"type": "git",
-					"reference": "dev-master"
-				}
-			}
 		}
 	],
 	"config": {
