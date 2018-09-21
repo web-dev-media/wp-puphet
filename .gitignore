@@ -1,0 +1,9 @@
+vendor
+.DS_Store
+.idea/
+composer.phar
+html/
+.vagrant
+Vagrantfile
+modules/
+puphpet/

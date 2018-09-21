@@ -1,0 +1,142 @@
+{
+	"name": "WordPress Dell V3",
+	"description": "Build a vagrant wordpress dell v3 enviornment",
+	"keywords": [
+		"wordpress",
+		"plugin",
+		"database",
+		"vagrant"
+	],
+	"license": "GPL-3.0+",
+	"type": "wordpress-playground-vagrant",
+	"homepage": "https://gist.github.com/derpixler/7d26324e651fcb72816a",
+	"authors": [
+		{
+			"name": "web dev media UG",
+			"homepage": "http://web-dev-media.de",
+			"email": "info@web-dev-media.de",
+			"role": "Developer"
+		}
+	],
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "http://wpackagist.org"
+		},
+		{
+			"type": "vcs",
+			"url": "git@bitbucket.org:webdevmedia/mailtemplates-e-mail-tool-v2.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@bitbucket.org:webdevmedia/theme-mailtool-v3.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@bitbucket.org:webdevmedia/plugins-mailtool.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@bitbucket.org:webdevmedia/wp-all-import-pro.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@bitbucket.org:webdevmedia/woocommerce-products-filter.git"
+		},
+
+		{
+			"type": "vcs",
+			"url": "git@bitbucket.org:webdevmedia/wpai-woocommerce-add-on.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@bitbucket.org:webdevmedia/advanced-custom-fields-pro.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@bitbucket.org:webdevmedia/yith-woocommerce-catalog-mode.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@bitbucket.org:webdevmedia/dell-faq.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@bitbucket.org:webdevmedia/gravityforms.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@bitbucket.org:webdevmedia/gravityperks.git"
+		},
+		{
+			"type": "vcs",
+			"url": "git@bitbucket.org:webdevmedia/puphpet.git"
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "gravity-tooltips",
+				"type": "wordpress-plugin",
+				"version": "dev-master",
+				"source": {
+					"url": "https://github.com/norcross/gravity-tooltips.git",
+					"type": "git",
+					"reference": "dev-master"
+				}
+			}
+		}
+	],
+	"config": {
+		"secure-http": false
+	},
+	"require": {
+		"php": ">=7",
+		"mnsami/composer-custom-directory-installer": "1.1.*",
+		"webdevmedia/puphpet": "dev-master",
+
+		"deployer/deployer": "^6.0",
+
+	    "johnpbloch/wordpress-core-installer": "~0.2",
+	    "johnpbloch/wordpress-core": "4.9.8",
+
+		"dell/mailtool-mailtemplates": "dev-master",
+		"dell/theme-mailtool-v3": "dev-develop",
+		"dell/mailtool-plugin": "dev-feature/send_mailing_action",
+		"dell/cpt-faq": "dev-master",
+
+		"webdevmedia/gravityforms": "dev-master",
+		"gravitywiz/gravityperks": "dev-master",
+
+		"webdevmedia/wp-all-import-pro": "dev-master",
+		"webdevmedia/wpai-woocommerce-add-on": "dev-master",
+		"webdevmedia/woocommerce-products-filter": "dev-master",
+		"webdevmedia/advanced-custom-fields-pro": "dev-master",
+
+		"wpackagist-plugin/woocommerce":"3.4.*",
+		"wpackagist-plugin/regenerate-thumbnails":"3.0.*",
+		"wpackagist-plugin/safe-svg":"1.6.1",
+		"wpackagist-plugin/wordpress-importer":"0.6.*",
+		"wpackagist-plugin/widget-importer-exporter":"1.5.*",
+		"wpackagist-plugin/ti-woocommerce-wishlist":"1.8.*",
+		"wpackagist-plugin/acf-gravityforms-add-on":"1.2.*",
+		"wpackagist-plugin/authenticator":"1.3.*"
+
+	},
+	"extra": {
+		"wordpress-install-dir": "html/wp",
+		"wordpress-content-dir": "html/wp-content",
+		"installer-paths": {
+			"html": ["wordpress/core"],
+			"html/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+			"html/wp-content/themes/{$name}/": ["type:wordpress-theme"],
+  		  	"html/wp-content/mailtool-mailtemplates": ["dell/mailtool-mailtemplates"]
+		}
+	},
+	"scripts" : {
+        "post-install-cmd": "assets/provision/prepare-vagrant.sh",
+		"post-update-cmd": "assets/provision/prepare-vagrant.sh"
+	},
+	"require-dev": {
+		"deployer/recipes": "^6.0"
+	}
+}
