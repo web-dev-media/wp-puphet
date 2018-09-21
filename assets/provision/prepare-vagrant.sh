@@ -14,6 +14,7 @@ YELLOW='\033[1;33;40m'
 NC='\033[0m' # No Color
 symlinkFile="create-symlink.sh"
 copie_str="${GREEN}Copy${NC}"
+symlink_str="${GREEN}Symlink created${NC}"
 copie_sucees_str="${GREEN}Files copied${NC}\n\n"
 error_str="${RED}Error:${NC}"
 
@@ -85,16 +86,9 @@ customConfigTarget="puphpet/config-custom.yaml"
 
 if [ -d "$puphpetPath" ]; then
     
-    if ! [ -f "puphpet" ]; then
+    if ! [ -d "puphpet" ]; then
         cp -r ${puphpetPath}/puphpet .
         printf "  - ${copie_str} ${puphpetPath}/puphpet  -> puphpet${NC}\n\n"
-    else
-	    printf "  - ${error_str} ${puphpetPath} not found!\n";
-    fi
-    
-    if ! [ -f "$vagrantFile" ]; then
-        cp ${puphpetPath}/${vagrantFile} .
-        printf "  - ${copie_str} ${puphpetPath}/${vagrantFile}  -> ${vagrantFile}${NC}\n\n"
     fi
 
     if ! [ -f "$vagrantFile" ]; then
@@ -104,7 +98,7 @@ if [ -d "$puphpetPath" ]; then
 
     if ! [ -f "$customConfigTarget" ]; then
         ln -s $customConfigSource $customConfigTarget
-        printf "  - ${copie_str} $customConfigSource  -> $customConfigTarget${NC}\n\n"
+        printf "  - ${symlink_str} $customConfigSource  -> $customConfigTarget${NC}\n\n"
     fi
     
 else
