@@ -25,52 +25,7 @@
 		},
 		{
 			"type": "vcs",
-			"url": "git@bitbucket.org:webdevmedia/mailtemplates-e-mail-tool-v2.git"
-		},
-		{
-			"type": "vcs",
-			"url": "git@bitbucket.org:webdevmedia/theme-mailtool-v3.git"
-		},
-		{
-			"type": "vcs",
-			"url": "git@bitbucket.org:webdevmedia/plugins-mailtool.git"
-		},
-		{
-			"type": "vcs",
-			"url": "git@bitbucket.org:webdevmedia/wp-all-import-pro.git"
-		},
-		{
-			"type": "vcs",
-			"url": "git@bitbucket.org:webdevmedia/woocommerce-products-filter.git"
-		},
-
-		{
-			"type": "vcs",
-			"url": "git@bitbucket.org:webdevmedia/wpai-woocommerce-add-on.git"
-		},
-		{
-			"type": "vcs",
-			"url": "git@bitbucket.org:webdevmedia/advanced-custom-fields-pro.git"
-		},
-		{
-			"type": "vcs",
-			"url": "git@bitbucket.org:webdevmedia/yith-woocommerce-catalog-mode.git"
-		},
-		{
-			"type": "vcs",
-			"url": "git@bitbucket.org:webdevmedia/dell-faq.git"
-		},
-		{
-			"type": "vcs",
-			"url": "git@bitbucket.org:webdevmedia/gravityforms.git"
-		},
-		{
-			"type": "vcs",
-			"url": "git@bitbucket.org:webdevmedia/gravityperks.git"
-		},
-		{
-			"type": "vcs",
-			"url": "git@bitbucket.org:webdevmedia/puphpet.git"
+			"url": "git@github.com:web-dev-media/puphpet.git"
 		},
 		{
 			"type": "package",
@@ -94,31 +49,11 @@
 		"mnsami/composer-custom-directory-installer": "1.1.*",
 		"webdevmedia/puphpet": "dev-master",
 
-		"deployer/deployer": "^6.0",
-
-	    "johnpbloch/wordpress-core-installer": "~0.2",
+		"johnpbloch/wordpress-core-installer": "~0.2",
 	    "johnpbloch/wordpress-core": "4.9.8",
 
-		"dell/mailtool-mailtemplates": "dev-master",
-		"dell/theme-mailtool-v3": "dev-develop",
-		"dell/mailtool-plugin": "dev-feature/send_mailing_action",
-		"dell/cpt-faq": "dev-master",
-
-		"webdevmedia/gravityforms": "dev-master",
-		"gravitywiz/gravityperks": "dev-master",
-
-		"webdevmedia/wp-all-import-pro": "dev-master",
-		"webdevmedia/wpai-woocommerce-add-on": "dev-master",
-		"webdevmedia/woocommerce-products-filter": "dev-master",
-		"webdevmedia/advanced-custom-fields-pro": "dev-master",
-
 		"wpackagist-plugin/woocommerce":"3.4.*",
-		"wpackagist-plugin/regenerate-thumbnails":"3.0.*",
-		"wpackagist-plugin/safe-svg":"1.6.1",
 		"wpackagist-plugin/wordpress-importer":"0.6.*",
-		"wpackagist-plugin/widget-importer-exporter":"1.5.*",
-		"wpackagist-plugin/ti-woocommerce-wishlist":"1.8.*",
-		"wpackagist-plugin/acf-gravityforms-add-on":"1.2.*",
 		"wpackagist-plugin/authenticator":"1.3.*"
 
 	},
