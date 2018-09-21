@@ -149,7 +149,7 @@ define('NONCE_SALT',       'g!.`p,+2U%@j9r/xeO3$:Gh#x<Bxl,pq;S{LIus.y@lU]aO_e,W6
 
 
 
-$table_prefix = 'v3dell_';
+$table_prefix = 'wpio_';
 
 /* Multisite */
 #define( 'WP_ALLOW_MULTISITE', true );
