@@ -26,3 +26,7 @@ apache:
                     path: /var/www/wordpress/html
                 php_php:
                     www_root: /var/www/wordpress/html
+mysql:
+    databases:
+        database1:
+            name: wp-puphpet
