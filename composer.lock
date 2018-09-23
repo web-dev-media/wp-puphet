@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c579c70a9a09a0ac6581f5ef89c6255c",
+    "content-hash": "d51c5967237476352999f8b029f71754",
     "packages": [
         {
             "name": "composer/installers",
@@ -272,12 +272,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-dev-media/puphpet.git",
-                "reference": "d5a3d59ad22bc7b3669eb29b0a689b82ab62966f"
+                "reference": "ad2913b5bae8ca6d5152eae5cac90c322a780ae7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-dev-media/puphpet/zipball/d5a3d59ad22bc7b3669eb29b0a689b82ab62966f",
-                "reference": "d5a3d59ad22bc7b3669eb29b0a689b82ab62966f",
+                "url": "https://api.github.com/repos/web-dev-media/puphpet/zipball/ad2913b5bae8ca6d5152eae5cac90c322a780ae7",
+                "reference": "ad2913b5bae8ca6d5152eae5cac90c322a780ae7",
                 "shasum": ""
             },
             "type": "library",
@@ -285,7 +285,7 @@
                 "source": "https://github.com/web-dev-media/puphpet/tree/master",
                 "issues": "https://github.com/web-dev-media/puphpet/issues"
             },
-            "time": "2018-09-21 09:09:11"
+            "time": "2018-09-21T19:25:21+00:00"
         },
         {
             "name": "wpackagist-plugin/authenticator",
@@ -346,6 +346,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-importer/"
+        },
+        {
+            "name": "wpackagist-theme/mesmerize",
+            "version": "1.6.62",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/mesmerize/",
+                "reference": "1.6.62"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/mesmerize.1.6.62.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/mesmerize/"
         }
     ],
     "packages-dev": [
