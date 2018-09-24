@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "d51c5967237476352999f8b029f71754",
@@ -272,12 +272,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-dev-media/puphpet.git",
-                "reference": "ad2913b5bae8ca6d5152eae5cac90c322a780ae7"
+                "reference": "922042bcb673e19d11fc7718f78094eda462ca91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-dev-media/puphpet/zipball/ad2913b5bae8ca6d5152eae5cac90c322a780ae7",
-                "reference": "ad2913b5bae8ca6d5152eae5cac90c322a780ae7",
+                "url": "https://api.github.com/repos/web-dev-media/puphpet/zipball/922042bcb673e19d11fc7718f78094eda462ca91",
+                "reference": "922042bcb673e19d11fc7718f78094eda462ca91",
                 "shasum": ""
             },
             "type": "library",
@@ -285,7 +285,7 @@
                 "source": "https://github.com/web-dev-media/puphpet/tree/master",
                 "issues": "https://github.com/web-dev-media/puphpet/issues"
             },
-            "time": "2018-09-21T19:25:21+00:00"
+            "time": "2018-09-24 05:38:44"
         },
         {
             "name": "wpackagist-plugin/authenticator",
