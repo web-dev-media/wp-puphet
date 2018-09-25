@@ -272,12 +272,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-dev-media/puphpet.git",
-                "reference": "ad2913b5bae8ca6d5152eae5cac90c322a780ae7"
+                "reference": "6fea057db49803fd240d30ac762410e0707310e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-dev-media/puphpet/zipball/ad2913b5bae8ca6d5152eae5cac90c322a780ae7",
-                "reference": "ad2913b5bae8ca6d5152eae5cac90c322a780ae7",
+                "url": "https://api.github.com/repos/web-dev-media/puphpet/zipball/6fea057db49803fd240d30ac762410e0707310e6",
+                "reference": "6fea057db49803fd240d30ac762410e0707310e6",
                 "shasum": ""
             },
             "type": "library",
@@ -285,7 +285,7 @@
                 "source": "https://github.com/web-dev-media/puphpet/tree/master",
                 "issues": "https://github.com/web-dev-media/puphpet/issues"
             },
-            "time": "2018-09-21T19:25:21+00:00"
+            "time": "2018-09-23T16:56:14+00:00"
         },
         {
             "name": "wpackagist-plugin/authenticator",
