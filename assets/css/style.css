@@ -278,6 +278,40 @@ code {
     border-color: rgba(255, 255, 255, 0.1); 
     color: #fff;
 }
+
+.btn-github{
+    font-size: 16px;
+    position: relative;
+    width: 200px;
+    height: 70px;
+    color:#2d2d2d;
+}
+
+.btn-github:hover{
+    background-color: #00499c;
+    color: #fff;
+}
+
+.btn-github i{
+    position: absolute;
+    left: 15px;
+    font-size: 47px;
+}
+
+.btn-github small,
+.btn-github span{
+    position: absolute;
+    right: 10px;
+    font-size: 15px;
+}
+
+.btn-github span{
+    right: 29px;
+    top: 25px;
+    font-size: 26px;
+}
+
+
 /*[Navbar]
 --------------------------*/
 .navbar {
