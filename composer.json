@@ -31,11 +31,13 @@
 	"config": {
 		"secure-http": false
 	},
+	"require-dev":{
+		
+	},
 	"require": {
 		"php": ">=7",
 		"mnsami/composer-custom-directory-installer": "1.1.*",
-		"webdevmedia/puphpet": "dev-master",
-
+		
 		"johnpbloch/wordpress-core-installer": "~0.2",
 	    "johnpbloch/wordpress-core": "4.9.8",
 
@@ -50,7 +52,6 @@
 		"wordpress-install-dir": "html/wp",
 		"wordpress-content-dir": "html/wp-content",
 		"installer-paths": {
-			"html": ["wordpress/core"],
 			"html/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
 			"html/wp-content/themes/{$name}/": ["type:wordpress-theme"],
   		  	"html/wp-content/mailtool-mailtemplates": ["dell/mailtool-mailtemplates"]

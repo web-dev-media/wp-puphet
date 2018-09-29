@@ -78,6 +78,7 @@ else
 	printf "  - ${error_str} ${sunrise} not found!\n";
 fi
 
+
 puphpetPath="vendor/webdevmedia/puphpet"
 vagrantFile="Vagrantfile"
 dotVagrantFile=".vagrant"
@@ -86,24 +87,23 @@ customConfigTarget="puphpet/config-custom.yaml"
 
 if [ -d "$puphpetPath" ]; then
     
-    if ! [ -d "puphpet" ]; then
-        cp -r ${puphpetPath}/puphpet .
-        printf "  - ${copie_str} ${puphpetPath}/puphpet  -> puphpet${NC}\n\n"
-    fi
+    cp -r ${puphpetPath}/puphpet .  2> /dev/null
+    printf "  - ${copie_str} ${puphpetPath}/puphpet  -> puphpet${NC}\n\n"
 
     if ! [ -f "$vagrantFile" ]; then
-        cp ${puphpetPath}/${vagrantFile} .
+        cp ${puphpetPath}/${vagrantFile} . 2> /dev/null
         printf "  - ${copie_str} ${puphpetPath}/${vagrantFile}  -> ${vagrantFile}${NC}\n\n"
     fi
 
     if ! [ -f "$customConfigTarget" ]; then
-        ln -s $customConfigSource $customConfigTarget
+        ln -s $customConfigSource $customConfigTarget 2> /dev/null
         printf "  - ${symlink_str} $customConfigSource  -> $customConfigTarget${NC}\n\n"
     fi
     
 else
     printf "  - ${error_str} ${vagrantFile} not found!\n";
 fi
+
 
 rm -rf ${htmlBasePath}wp/wp-content/
 printf "  - ${RED}Delete${NC} WordPress default wp-content\n    ${GREEN}folder deleted${NC}\n\n"

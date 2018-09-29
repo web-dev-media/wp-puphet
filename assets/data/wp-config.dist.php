@@ -60,7 +60,7 @@ switch ( $_SERVER[ 'REDIRECT_ENV' ] ) {
 		break;
 	default:
 		$args = [
-			'DB_NAME'						=> 'wp-puphpet',
+			'DB_NAME'						=> 'wp_puphpet',
 			'DB_USER'						=> 'dbuser',
 			'DB_PASSWORD' 					=> '123',
 			'DB_HOST'						=> 'localhost',

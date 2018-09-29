@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d51c5967237476352999f8b029f71754",
+    "content-hash": "8fa0530098987cf80ac1452b51244aaf",
     "packages": [
         {
             "name": "composer/installers",
@@ -267,27 +267,6 @@
             "time": "2016-05-25T08:26:02+00:00"
         },
         {
-            "name": "webdevmedia/puphpet",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/web-dev-media/puphpet.git",
-                "reference": "922042bcb673e19d11fc7718f78094eda462ca91"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/web-dev-media/puphpet/zipball/922042bcb673e19d11fc7718f78094eda462ca91",
-                "reference": "922042bcb673e19d11fc7718f78094eda462ca91",
-                "shasum": ""
-            },
-            "type": "library",
-            "support": {
-                "source": "https://github.com/web-dev-media/puphpet/tree/master",
-                "issues": "https://github.com/web-dev-media/puphpet/issues"
-            },
-            "time": "2018-09-24T05:38:44+00:00"
-        },
-        {
             "name": "wpackagist-plugin/authenticator",
             "version": "1.3.0",
             "source": {
@@ -423,9 +402,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "webdevmedia/puphpet": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
