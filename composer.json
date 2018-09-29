@@ -37,6 +37,7 @@
 	"require": {
 		"php": ">=7",
 		"mnsami/composer-custom-directory-installer": "1.1.*",
+		"webdevmedia/puphpet": "dev-master",
 		
 		"johnpbloch/wordpress-core-installer": "~0.2",
 	    "johnpbloch/wordpress-core": "4.9.8",
