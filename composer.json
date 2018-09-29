@@ -1,6 +1,6 @@
 {
-	"name": "WordPress Dell V3",
-	"description": "Build a vagrant wordpress dell v3 enviornment",
+	"name": "WordPress",
+	"description": "Build a vagrant wordpress environment",
 	"keywords": [
 		"wordpress",
 		"plugin",
