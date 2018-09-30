@@ -31,9 +31,6 @@
 	"config": {
 		"secure-http": false
 	},
-	"require-dev":{
-		
-	},
 	"require": {
 		"php": ">=7",
 		"mnsami/composer-custom-directory-installer": "1.1.*",
@@ -61,8 +58,5 @@
 	"scripts" : {
         "post-install-cmd": "assets/provision/prepare-vagrant.sh",
 		"post-update-cmd": "assets/provision/prepare-vagrant.sh"
-	},
-	"require-dev": {
-		"deployer/recipes": "^6.0"
 	}
 }
