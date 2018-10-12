@@ -164,8 +164,9 @@
 							<h2>Requirements</h2>
 						</div>
 						<ul>
-							<li>Minimum required Vagrant version is 2.0</li>
-							<li>Minimum suggested Virtualbox version is 5.0</li>
+							<li>Minimum required <a href="https://www.vagrantup.com/">Vagrant</a> version is 2.0</li>
+							<li>Minimum required <a href="https://www.vagrantup.com/">Vagrant</a> version is 2.0</li>
+							<li>Minimum suggested ><a href="https://www.virtualbox.org/">Virtualbox</a> version is 5.0</li>
 							<li><a href="https://getcomposer.org/">Composer</a></li>
 						</ul>
 
@@ -176,11 +177,15 @@
 						<h3 class="h5">Install VirtualBox</h3>
 						<p><a href="https://www.virtualbox.org/">https://www.virtualbox.org/</a></p>
 
+						<h3 class="h5">Install Composer</h3>
+						<p><a href="https://getcomposer.org/">https://getcomposer.org/</a></p>
+
 						<h3 class="h5">Install Vagrant</h3>
 						<p><a href="https://www.vagrantup.com/">https://www.vagrantup.com/</a></p>
 
-						<h3 class="h5">Install Composer</h3>
-						<p><a href="https://getcomposer.org/">https://getcomposer.org/</a></p>
+						<h3 class="h5">Install Vagrant Hostsmanager</h3>
+						<p>The vagrant-hostsupdater plugin will modify your hosts file so that provisioned domains such as http://local.wp-puphpet.io works. To install it, run;</p>
+						<pre class="snippet bash"><code>vagrant plugin install vagrant-hostmanager</code></pre>
 
 						<h3 class="h5">Clone wp-puhpet</h3>
 						<p>
@@ -189,14 +194,15 @@
 						</p>
 						<pre class="snippet"><code>git clone git@github.com:web-dev-media/wp-puphpet.git</code></pre>
 
-						<h3 class="h5">Start Composer</h3>
+						<h3 class="h5">Install WordPress with composer</h3>
+						<pre class="snippet"><code>cd wp-puphpet/</code></pre>
 						<pre class="snippet"><code>composer install</code></pre>
 
-						<h3 class="h5">Start our wp-puhpet environment</h3>
+						<h3 class="h5">Start our wp-puphpet environment</h3>
 						<pre class="snippet"><code>vagrant up</code></pre>
 
 
-						<h3 class="h5">Load WordPress on wp-puhpet in your browser</h3>
+						<h3 class="h5">Load WordPress on wp-puphpet in your browser</h3>
 						<p>Visit <a href="http://local.wp-puphpet.io">http://local.wp-puphpet.io</a> or <a href="http://172.23.0.55">http://172.23.0.55</a>.
 
 					</div>
