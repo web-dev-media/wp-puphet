@@ -51,8 +51,7 @@
 		"wordpress-content-dir": "html/wp-content",
 		"installer-paths": {
 			"html/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
-			"html/wp-content/themes/{$name}/": ["type:wordpress-theme"],
-  		  	"html/wp-content/mailtool-mailtemplates": ["dell/mailtool-mailtemplates"]
+			"html/wp-content/themes/{$name}/": ["type:wordpress-theme"]
 		}
 	},
 	"scripts" : {
