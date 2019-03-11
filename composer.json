@@ -25,7 +25,7 @@
 		},
 		{
 			"type": "vcs",
-			"url": "git@github.com:web-dev-media/puphpet.git"
+			"url": "https://github.com/web-dev-media/puphpet.git"
 		}
 	],
 	"config": {
