@@ -1,6 +1,6 @@
 {
-	"name": "WordPress",
-	"description": "Build a vagrant wordpress environment",
+	"name": "web-dev-media/wp-puphpet",
+	"description": "Build a Vagrant WordPress environment",
 	"keywords": [
 		"wordpress",
 		"plugin",
